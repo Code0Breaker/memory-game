@@ -1,0 +1,9 @@
+.players {
+  display: flex;
+  .player {
+    color: #fff;
+    &:not(.active) {
+      opacity: .5;
+    }
+  }
+}

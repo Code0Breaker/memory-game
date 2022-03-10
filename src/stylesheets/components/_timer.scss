@@ -1,0 +1,23 @@
+.timer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  .flip-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .flip-item {
+      
+      margin: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+      box-shadow: 0 0 10px 0;
+      .digit {
+        font-weight: bold;
+      }
+    }
+  }
+}

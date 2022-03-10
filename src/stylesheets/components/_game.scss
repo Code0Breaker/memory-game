@@ -1,0 +1,217 @@
+.flipped-background {
+  background: #005bb9 !important;
+}
+
+.multi-header {
+  max-width: 900px;
+  width: 100%;
+  display: grid;
+}
+
+.solo-header {
+  width: 100%;
+  background: #5d8dbe;
+  border-radius: 4px 4px 0px 0px;
+  padding: 21px 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.score {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+.score h3 {
+  font-family: "Montserat-Bold";
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.whiteBox {
+  padding: 10px 14px;
+  min-height: 41px;
+  min-width: 50px;
+  background: #f1f4f6;
+  border-radius: 4px;
+  text-align: center;
+}
+.rightStyles {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.score .whiteBox {
+  font-family: "Montserat-Bold";
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+.moves {
+  color: #646464;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+}
+.moves h3,
+.moves .num {
+  margin: 0;
+  font-family: "Montserat-Bold";
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #646464;
+}
+.timer {
+  font-family: "Montserat-Bold";
+}
+
+.app-game {
+  width: 100%;
+  .game-room {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    h1 {
+      font-family: "Hanalei Fill";
+    }
+    p {
+      font-family: "MedievalSharp";
+      padding: 0 15px;
+    }
+    .alert {
+      margin: 0 15px 15px;
+    }
+    .arena {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      margin: 0 auto;
+      &.easy {
+        max-width: 930px;
+      }
+      .item {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 170px;
+        height: 170px;
+        margin: 5px;
+        border-radius: 5px;
+        transform-style: preserve-3d;
+        transition: all 0.5s linear;
+        box-shadow: 0 0 5px 1px #000;
+        background: #fff;
+        &.flipped {
+          transform: rotateY(180deg);
+        }
+        .face {
+          position: absolute;
+          backface-visibility: hidden;
+          &.back {
+            transform: rotateY(180deg);
+          }
+          img {
+            max-width: 100px;
+            max-height: 100px;
+          }
+        }
+      }
+    }
+    .sign-out {
+      position: fixed;
+      right: 15px;
+      top: 15px;
+      font-size: 24px;
+      background: #fff;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+}
+
+.choosen {
+  background-color: #ff5161;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 7px 20px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.footer {
+  padding: 13px 10px;
+  background: #cdd7e1;
+  border-radius: 0px 0px 4px 4px;
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  max-width: 900px;
+  width: 100%;
+}
+.footerListParent {
+  width: 90%;
+  padding: 0;
+}
+
+.footerList {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+.footerListTitle {
+  font-family: "Montserat-Bold";
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  margin-right: 20px;
+}
+.footerListCards {
+  display: flex;
+  grid-gap: 20px;
+  align-items: center;
+}
+.footerListCards .card {
+  cursor: pointer;
+  background: #fff;
+  border-radius: 4px;
+  padding: 7px 20px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(0, 91, 185, 1);
+}
+.footerListCards .selected {
+  pointer-events: none;
+  background: #ff5161;
+  border-radius: 4px;
+  border-radius: 4px;
+  padding: 7px 20px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #fff;
+}

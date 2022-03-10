@@ -1,0 +1,64 @@
+{
+  "name": "memory-game",
+  "version": "1.0.0",
+  "description": "Multiplayer Memory Game",
+  "main": "index.js",
+  "scripts": {
+    "dev:client": "webpack-dev-server --open --config webpack.dev.js",
+    "dev:server": "nodemon index.js",
+    "start": "concurrently \"npm run dev:client\" \"npm run dev:server\"",
+    "build": "webpack --config webpack.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/narekkeryan/memory-game.git"
+  },
+  "keywords": [
+    "memory",
+    "multiplayer"
+  ],
+  "author": "Narek Keryan <narek.keryan@gmail.com> (http://nkgdev.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/narekkeryan/memory-game/issues"
+  },
+  "homepage": "https://github.com/narekkeryan/memory-game#readme",
+  "dependencies": {
+    "axios": "^0.26.0",
+    "concurrently": "^3.6.1",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "fs-extra": "^7.0.0",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-redux": "^5.0.7",
+    "reactstrap": "^6.3.1",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.3.0",
+    "socket.io": "^2.1.1",
+    "socket.io-client": "^2.1.1"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.2.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "bootstrap": "^4.1.3",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^1.0.0",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.9.2",
+    "sass-google-fonts": "^1.0.1",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.21.0",
+    "uglifyjs-webpack-plugin": "^1.2.7",
+    "webpack": "^4.16.4",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5",
+    "webpack-merge": "^4.1.4"
+  }
+}
