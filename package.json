@@ -6,23 +6,15 @@
   "scripts": {
     "dev:client": "webpack-dev-server --open --config webpack.dev.js",
     "dev:server": "nodemon index.js",
-    "start": "concurrently \"npm run dev:client\" \"npm run dev:server\"",
+    "start:dev": "concurrently \"npm run dev:client\" \"npm run dev:server\"",
+    "start": "node index.js",
     "build": "webpack --config webpack.prod.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/narekkeryan/memory-game.git"
-  },
+
   "keywords": [
     "memory",
     "multiplayer"
   ],
-  "author": "Narek Keryan <narek.keryan@gmail.com> (http://nkgdev.com)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/narekkeryan/memory-game/issues"
-  },
-  "homepage": "https://github.com/narekkeryan/memory-game#readme",
   "dependencies": {
     "axios": "^0.26.0",
     "concurrently": "^3.6.1",
